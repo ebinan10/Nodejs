@@ -1,4 +1,4 @@
-const State = require('../../model/State');
+const State = require('../../model/Db4');
 
   exports.createState = async( req, res, next)=>{
     try{ State.create({

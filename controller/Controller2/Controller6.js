@@ -1,4 +1,4 @@
-const PollingUnitDetail = require('../../model/PollingUnitDetails');
+const PollingUnitDetail = require('../../model/Db3');
 
 exports.unitInfo = async ( req, res, next) =>{
    try {

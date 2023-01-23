@@ -1,4 +1,4 @@
-const LGA = require('../../model/LGA')
+const LGA = require('../../model/Db1')
 
 exports.createLga = async(req, res, next) =>{
    try{ 

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const Ward = require('../../model/Ward');
+const Ward = require('../../model/Db6');
 const User = require('../../model/User');
 
 exports.CreateWard = async(req, res, next) =>{

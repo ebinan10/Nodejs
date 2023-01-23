@@ -1,11 +1,11 @@
 const express = require('express');
 const env = require('dotenv').config();
 const mongoose = require('mongoose');
-const LGA = require('./router/lga/LGA');
-const PollingUnit = require('./router/polling-unit/PollingUnit');
-const State = require('./router/state/State');
+const LGA = require('./router/route1/Route1');
+const PollingUnit = require('./router/route2/Route2');
+const State = require('./router/route3/Route3');
 const User = require('./router/user/User');
-const Ward = require('./router/ward/Ward');
+const Ward = require('./router/route5/Route5');
 const cors = require('cors')
 
 const app = express();

@@ -1,10 +1,10 @@
  const mongoose = require('mongoose')
- const LGA = require('../../model/LGA');
-const PollingUnit = require('../../model/PollingUnit');
-const PollingUnitDetails = require('../../model/PollingUnitDetails');
-const State = require('../../model/State');
+ const LGA = require('../../model/Db1');
+const PollingUnit = require('../../model/Db2');
+const PollingUnitDetails = require('../../model/Db3');
+const State = require('../../model/Db4');
 const User = require('../../model/User');
-const Ward = require('../../model/Ward');
+const Ward = require('../../model/Db6');
 
  exports.createPollingUnit = async(req,res,next)=>{
     const {unit_id,party,result,ward_id,lga_id,state_id,user_id} = req.body;
