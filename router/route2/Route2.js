@@ -1,14 +1,14 @@
 const express = require('express');
-const PollingUnit = require('../../controller/Controller2/Controller2');
-const PollingUnitDetail = require('../../controller/Controller2/Controller6');
+const Controller1 = require('../../controller/Controller2/Controller2');
+const Controller2 = require('../../controller/Controller2/Controller6');
 const router = express.Router();
 
-router.post('/create', PollingUnit.createPollingUnit);
+router.post('/create', Controller1.createPollingUnit);
 
-router.post('/info', PollingUnitDetail.unitInfo);
+router.post('/info', Controller2.unitInfo);
 
-router.post('/find', PollingUnit.getPollingUnit);
+router.post('/find', Controller1.getPollingUnit);
 
-router.post('/result', PollingUnit.getLocalGovtResullt);
+router.post('/result', Controller1.getLocalGovtResullt);
 
 module.exports = router;

@@ -1,14 +1,12 @@
-const PollingUnitDetail = require('../../model/Db3');
+const Db3 = require('../../model/Db3');
 
 exports.unitInfo = async ( req, res, next) =>{
    try {
-    const {unit_id, unit_name, unit_address} = req.body
-    await PollingUnitDetail.create({
-        pollingunit_id: unit_id,
-        pollingunit_name: unit_name,
-        pollingunit_address: unit_address
+    const {_id } = req.body
+    await Db3.create({
+        _id
     })
-    res.status(200).json('polling unit info created successfully');
+    res.status(200).json('_id created successfully');
 }
 catch(err){
     console.log(err);

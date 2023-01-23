@@ -1,8 +1,8 @@
 const express = require('express')
-const  Ward = require('../../controller/Controller5/Controller5')
+const  Controller = require('../../controller/Controller5/Controller5')
 
 const router= express.Router()
 
-router.post('/create', Ward.CreateWard)
+router.post('/create', Controller.CreateController)
 
 module.exports = router;

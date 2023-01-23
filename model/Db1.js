@@ -2,24 +2,13 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const LgaSchema = new Schema(
+const SchemaMongoose2 = new Schema(
     {
-        lga_id:{
+        id:{
             type:Number,
             required:true
-        },
-        lga_name:{
-            type:String,
-            required:true
-        },
-        party:{
-            type:String,
-            required:true
-        },
-        lga_result:{
-            type:Number
         }
     }
 )
 
-module.exports = mongoose.model('LGA',LgaSchema)
+module.exports = mongoose.model('LGA',SchemaMongoose2)

@@ -1,8 +1,8 @@
 const express = require('express');
-const State = require('../../controller/Controller3/Controller3')
+const Controller = require('../../controller/state/Controller')
 
 const router = express.Router()
 
-router.post('/create', State.createState)
+router.post('/create', Controller.createController)
 
 module.exports = router;

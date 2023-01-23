@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const StateSchema = new Schema(
+const SchemaMongoose4 = new Schema(
     {
         state_id:{
             type:Number,
@@ -15,4 +15,4 @@ const StateSchema = new Schema(
     }
 )
 
-module.exports = mongoose.model('State',StateSchema)
+module.exports = mongoose.model('SchemaMongoose4',SchemaMongoose4)
