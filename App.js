@@ -17,12 +17,12 @@ mongoose.connect(process.env.Uri).then(()=>{
     app.listen(process.env.Port, 
     console.log("server is running now!!!"))
         app.use('/user', User)
-    app.use('/route1', Route1)
-    app.use('/route2', Route2)
-    app.use('/route3', Route3)
-    app.use('/route5', Route5) 
-    })
+    // app.use('/route1', Route1)
+    // app.use('/route2', Route2)
+    // app.use('/route3', Route3)
+    // app.use('/route5', Route5) 
+    }) 
     .catch(err=>{
     console.log(err)
 }) 
-
+ 
